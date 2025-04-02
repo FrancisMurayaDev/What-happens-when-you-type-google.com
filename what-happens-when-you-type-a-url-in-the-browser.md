@@ -139,4 +139,24 @@ If the incoming request meets the security rules set by the firewall in front of
 
 - However, if the request does not meet the security rules, it is blocked, and the browser is unable to access the website.
 
+### HTTPS/ SSL
+
+HTTPS (Hypertext Transfer Protocol Secure) is a secure version of the HTTP protocol used to transmit data on the Internet. 
+
+- It is used to encrypt the data transmitted between your browser and Google's server.
+
+SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are encryption protocols that are used to secure the data transmitted over HTTPS.
+
+When the browser establishes a connection with Google's server using HTTPS, the browser and Google's server first agree on the version of SSL/TLS to use and then create a secure, encrypted channel for transmitting the data.
+
+#### Here is an anology to explain what is happening:
+
+- `HTTPS` is like a locked box that is used to send messages over the internet. When you want to send a message using `HTTPS`, you put the message in the locked box and send it to the person you want to receive the message. Only the person you are sending the message to has the `key` to unlock the box and read the message.
+
+- `SSL/TLS` are like special codes that are used to lock and unlock the box. When you want to send a message using `HTTPS`, you and the person you are sending the message to agree on the code to use to lock and unlock the box. This way, only you and the person you are sending the message to know the code and can read the message.
+
+- When you type `"google.com"` into your browser, the browser is like the person sending the message. The server that hosts `google.com` is like the person receiving the message. The browser sends a request for the webpage using `HTTPS`, which is like putting the request in a locked box and sending it to the server. The server then sends the webpage back to the browser using `HTTPS`, which is like putting the webpage in a locked box and sending it back to the browser.
+
+
+
 
