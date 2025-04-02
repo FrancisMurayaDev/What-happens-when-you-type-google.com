@@ -93,5 +93,27 @@ Additional steps may be involved if the DNS record is not found at any of the na
 - The length of time that the DNS record is cached `(the "TTL," or Time To Live)` is determined by the authoritative nameserver and can be configured by the domain owner.
 
 
+### TCP/IP Connection 
+
+TCP (Transmission Control Protocol) and IP (Internet Protocol) are two of the main protocols that make up the internet.
+
+They work together to establish a connection between a client and a server and facilitate the transmission of data between them.
+
+When you enter `"google.com"` into a web browser, the browser uses TCP/IP to establish a connection with the server that hosts the website.
+
+#### Here is a more detail of what happens::
+
+1. The browser sends a request to the server using IP to establish a connection.
+
+2. The server receives the request and sends back a message acknowledging the request to establish a connection. This is the `handshake` process.
+
+3. Once the handshake is complete, the browser can send a request for the webpage it wants to access (in this case, the homepage of google.com). 
+- This request is sent using TCP, which ensures that the request is transmitted reliably and in the correct order.
+
+4. The server receives the request and sends back the HTML code for the homepage of google.com to the browser. 
+- This response is also sent using TCP to ensure reliable transmission.
+
+5. The browser receives the HTML code and uses it to render the webpage on your screen. 
+- Any resources (such as images) that the webpage needs are also requested and received using `TCP/IP`.
 
 
