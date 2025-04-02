@@ -171,6 +171,20 @@ In the case of a browser trying to access `google.com`, the load balancer would 
 
 - The particular server chosen will depend on the type of load-balancing algorithm implemented.
 
+### Web Server 
+
+A web server is a computer program that is responsible for handling requests for web pages from clients (`such as a browser trying to access google.com`). 
+
+When a client sends a request for a web page to a web server, the server processes the request and returns the appropriate response to the client.
+
+This means that when trying to access `google.com`, Google's server will receive a request from the load balancer.
+
+The web server would then process the request and generate a response, which would typically include the `HTML, CSS, and JavaScript` files that make up the web page.
+
+The web server would then send this response back to the load balancer, which would forward it to the browser. 
+
+The browser would then use the `HTML, CSS, and JavaScript` files to render the web page for the user.
+
 
 
 
