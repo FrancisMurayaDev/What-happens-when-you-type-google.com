@@ -52,7 +52,45 @@ The webserver will then include this in the response that it sends back to the b
 
 # Lets Dive More into What Happens: 
 
+## DNS Request
 
+When you use a browser to access any website or domain name, the browser stores the websites/domain information in its cache `(DNS record)`.
+
+- If you type a domain name such as `google.com` in your browser, the browser checks if there is a recent `DNS record/cache` for that domain. 
+
+- If there is one, it will use the `IP address` in the cache to send a request to the server. 
+
+- This speeds up the process of ressolving the `domain name` to an `ip address` since it avoid the need to send a request to the `DNS server` to ressolve the domain name to an IP address.
+
+This is a whole process on its own, here are the various steps involved. 
+
+### DNS look Up Process
+
+1. The browser sends a request to the local DNS resolver, which is usually provided by the internet service provider (ISP).
+
+2. The local DNS resolver checks its cache to see if it has a recent copy of the DNS record for the domain. If it does, it sends the IP address back to the browser.
+
+3. If the local DNS resolver does not have a recent copy of the DNS record, it sends a request to a root nameserver.
+
+4. The root nameserver responds with the address of a top-level domain (TLD) nameserver, such as .com or .org.
+
+5. The local DNS resolver sends a request to the TLD nameserver.
+
+6. The TLD nameserver responds with the address of the authoritative nameserver for the domain.
+
+7. The local DNS resolver sends a request to the authoritative nameserver.
+
+8. The authoritative nameserver responds with the IP address for the domain.
+
+9. The local DNS resolver sends the IP address back to the browser.
+
+10. The browser sends a request to the server at the IP address to retrieve the webpage.
+
+Additional steps may be involved if the DNS record is not found at any of the name servers, or if the DNS record has been configured to use a service such as `DNS load balancing` or `Content Delivery Networks (CDN)`.
+
+- Once the IP address has been ressolved, it is cached by the local DNS ressolver and the browser so that future requests for the same domain name can be ressolved more quickly. 
+
+- The length of time that the DNS record is cached `(the "TTL," or Time To Live)` is determined by the authoritative nameserver and can be configured by the domain owner.
 
 
 
