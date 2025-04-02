@@ -157,6 +157,22 @@ When the browser establishes a connection with Google's server using HTTPS, the 
 
 - When you type `"google.com"` into your browser, the browser is like the person sending the message. The server that hosts `google.com` is like the person receiving the message. The browser sends a request for the webpage using `HTTPS`, which is like putting the request in a locked box and sending it to the server. The server then sends the webpage back to the browser using `HTTPS`, which is like putting the webpage in a locked box and sending it back to the browser.
 
+### Load-balancer
+
+A load balancer is a device that distributes incoming network traffic across a group of servers or resources.
+
+- Its primary function is to ensure that the traffic is distributed evenly across the servers in order to avoid overloading any single server and to increase the overall capacity and reliability of the system.
+
+- A company like Google, which receives billions of website visitors a day, will need a lot of servers to serve all these users. 
+
+- Therefore, there will be a need for them to set up a load balancer to ensure that some of the servers are not overburdened while others are being underutilized.
+
+In the case of a browser trying to access `google.com`, the load balancer would receive the incoming request from the browser and then forward it to one of the servers in the Google server network. 
+
+- The particular server chosen will depend on the type of load-balancing algorithm implemented.
+
+
+
 
 
 
