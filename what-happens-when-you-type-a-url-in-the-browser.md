@@ -186,6 +186,29 @@ The web server would then send this response back to the load balancer, which wo
 The browser would then use the `HTML, CSS, and JavaScript` files to render the web page for the user.
 
 
+#### Here is what happens when there is a Database available: 
+
+
+## Application server and database (if applicable).
+
+Unlike the web server, the application server handles dynamic content. 
+
+When using `"google.com"`, the application server will be responsible for generating the search results (which change based on the query you put into the search engine).
+
+When you submit a search query to Google, the request is first sent to the `load balancer`, which forwards it to one of the web servers in the `Google server network`. 
+
+The web server then sends the request to the application server, which processes the request and generates the search results.
+
+Depending on the complexity of the search query, the application server may need to make a request to a database in order to retrieve the necessary data.
+
+`For example`, if you are searching for a specific product on an e-commerce website, the application server may need to retrieve information about the product from a database.
+
+Once the application server has obtained the necessary data, it sends it back to the web server, which includes it in the response that is sent back to the browser. 
+
+- The browser then uses this information to display the search results to you.
+
+## 
+
 
 
 
