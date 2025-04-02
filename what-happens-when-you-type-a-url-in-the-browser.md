@@ -116,4 +116,27 @@ When you enter `"google.com"` into a web browser, the browser uses TCP/IP to est
 5. The browser receives the HTML code and uses it to render the webpage on your screen. 
 - Any resources (such as images) that the webpage needs are also requested and received using `TCP/IP`.
 
+### Firewall
+
+A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. 
+- Its primary purpose is to protect a network from external threats, such as hackers and malware.
+
+When you type a URL like `"google.com"` into your browser, the request that your browser makes to Google's server passes through the firewall on its way. 
+
+- The firewall checks the incoming request to make sure it is allowed based on its security rules.
+
+#### There are two main types of security rules that a firewall uses to check incoming requests:
+
+1. Rules that allow or block traffic based on the source and destination of the request.
+
+- For example, a firewall may be configured to block all traffic from certain countries or to allow only certain IP addresses to access the network.
+
+2. Rules that allow or block traffic based on the type of traffic.
+
+-  For example, a firewall may be configured to block all traffic on certain ports (such as those used by malware) or to allow only certain types of traffic (such as HTTP or HTTPS).
+
+If the incoming request meets the security rules set by the firewall in front of Google's server, it is allowed through, and the browser is able to access the website.
+
+- However, if the request does not meet the security rules, it is blocked, and the browser is unable to access the website.
+
 
